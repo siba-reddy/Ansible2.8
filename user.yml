@@ -6,4 +6,5 @@
       user:
         name: siman
         group: root
+        comment: testuser
         state: present
