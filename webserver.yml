@@ -1,0 +1,8 @@
+---
+- name: install web server in local system
+  hosts: localhost
+  tasks:
+    - name: install httpd package
+      yum:
+        name: httpd
+        state: latest
