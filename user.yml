@@ -6,4 +6,7 @@
       user:
         name: siman
         group: root
+        comment: testuser
+        groups: wheel        #add the user in wheel group to make sudo user 
+        append: true
         state: present
