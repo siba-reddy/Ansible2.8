@@ -5,4 +5,5 @@
     - name: create a user 
       user:
         name: siman
+        group: root
         state: present
