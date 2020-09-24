@@ -1,7 +1,7 @@
 ---
 - name: install web server in local system
   hosts: localhost
-  remote_user: root
+  remote_user: admin
   become: true
   tasks:
     - name: install httpd package
