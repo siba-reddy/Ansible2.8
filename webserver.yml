@@ -8,3 +8,16 @@
       yum:
         name: httpd
         state: latest
+      tags: install_packeg
+    - name: starte and enabled the httpd service
+      service:
+        name: httpd.service
+        state: started
+        enabled: true
+      tags: service
+    - name: write the conetnt
+      copy:
+        content: "Hello Wolrd"
+        dest: /var/www/html/index.html
+      tags: content
+        
